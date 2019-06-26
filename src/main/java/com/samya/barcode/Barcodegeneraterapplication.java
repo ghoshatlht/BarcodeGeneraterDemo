@@ -41,7 +41,8 @@ public class Barcodegeneraterapplication {
 		    Barcode128 code128 = new Barcode128();
 		    code128.setGenerateChecksum(true);
 
-                    code128.setCode("4 345621801");    
+                    code128.setCode("4 345621801");  
+                    document.add(new Paragraph ("New Product created by SamyaIT GmbH"));
 
 	    document.add(code128.createImageWithBarcode(writer.getDirectContent(), null, null));
     document.close();
